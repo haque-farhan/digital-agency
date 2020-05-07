@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
 import aboutImage from "../../assests/img/about/about.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutUs = () => {
   return (

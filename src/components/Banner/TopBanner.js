@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import "../../assests/custom.css";
 import { Row, Container, Col } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const TopBanner = () => {
   return (
@@ -15,6 +17,7 @@ const TopBanner = () => {
             </h4>
             <p>
               <a href="#" className="btn btn-lg btnGradient">
+                <FontAwesomeIcon className="mr-2 fa-1x" icon={faCoffee} />
                 Signup for trial
               </a>
             </p>

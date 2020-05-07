@@ -14,12 +14,21 @@ import {
   NavbarText,
   Container,
   Row,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
 } from "reactstrap";
 
 const TopNavigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+
+  const [modal, setModal] = useState(false);
+
+  const modalToggle = () => setModal(!modal);
 
   return (
     <Fragment>
@@ -48,9 +57,23 @@ const TopNavigation = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText onClick={modalToggle}>Help</NavbarText>
         </Collapse>
       </Navbar>
+      <Modal isOpen={modal} toggle={modalToggle} className="">
+        <ModalHeader toggle={modalToggle}>Help</ModalHeader>
+        <ModalBody>
+          If you need any help feel free to ask email : Farhanhaque.lu@gmail.com
+        </ModalBody>
+        <ModalFooter>
+          {/* <Button color="primary" onClick={modalToggle}>
+            Do Something
+          </Button>{" "} */}
+          <Button color="secondary" onClick={modalToggle}>
+            Cancel
+          </Button>
+        </ModalFooter>
+      </Modal>
     </Fragment>
   );
 };
