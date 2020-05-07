@@ -26,7 +26,7 @@ const Billing = () => {
             <Card className="text-center">
               <CardBody>
                 <CardTitle> Starter package</CardTitle>
-                <h3 class="display-3 font-weight-bold">$18</h3>
+                <h3 className="display-3 font-weight-bold">$18</h3>
                 <CardText>
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -45,7 +45,7 @@ const Billing = () => {
             <Card className="text-center">
               <CardBody>
                 <CardTitle> Ultimate package</CardTitle>
-                <h3 class="display-3 font-weight-bold">$39</h3>
+                <h3 className="display-3 font-weight-bold">$39</h3>
                 <CardText>
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -62,7 +62,7 @@ const Billing = () => {
             <Card className="text-center">
               <CardBody>
                 <CardTitle> Premium package</CardTitle>
-                <h3 class="display-3 font-weight-bold">$26</h3>
+                <h3 className="display-3 font-weight-bold">$26</h3>
                 <CardText>
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit

@@ -4,7 +4,7 @@ import ClientLists from "./ClientLists";
 
 const Clients = () => {
   return (
-    <Fragment>
+    <section className="border-top border-bottom">
       <Container>
         <Row className="text-center py-3">
           {ClientLists.map((clientList, i) => (
@@ -14,7 +14,7 @@ const Clients = () => {
           ))}
         </Row>
       </Container>
-    </Fragment>
+    </section>
   );
 };
 
