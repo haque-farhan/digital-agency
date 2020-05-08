@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import {
   Collapse,
   Navbar,
@@ -6,14 +6,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   NavbarText,
-  Container,
-  Row,
   Button,
   Modal,
   ModalHeader,
@@ -21,8 +18,13 @@ import {
   ModalFooter,
 } from "reactstrap";
 
+import { NavLink } from "react-router-dom";
+
 const TopNavigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navBarTitle, setNavBarTitle] = useState("navTitle");
+  const [navbarBack, setNavbarBack] = useState("navBackground");
+  const [navBarItem, setNavBarItem] = useState("navItem");
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -30,19 +32,43 @@ const TopNavigation = (props) => {
 
   const modalToggle = () => setModal(!modal);
 
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 100) {
+        setNavBarItem("navItemScroll");
+        setNavBarTitle("navTitleScroll");
+        setNavbarBack("navBackgroundScroll");
+      } else if (window.scrollY < 100) {
+        setNavBarItem("navItem");
+        setNavBarTitle("navBarTitle");
+        setNavbarBack("navBackground");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <Fragment>
-      <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar expand="md" fixed="top" className={navbarBack}>
+        <NavbarBrand to="/" className={navBarTitle}>
+          Spyder
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink className="nav-link" exact to="/">
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/about"
+              >
+                About
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
@@ -57,7 +83,9 @@ const TopNavigation = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText onClick={modalToggle}>Help</NavbarText>
+          <NavbarText onClick={modalToggle} className={navBarTitle}>
+            Help
+          </NavbarText>
         </Collapse>
       </Navbar>
       <Modal isOpen={modal} toggle={modalToggle} className="">

@@ -1,21 +1,16 @@
 import React, { Fragment } from "react";
-import TopNavigation from "./components/Navbar/TopNavigation";
-import TopBanner from "./components/Banner/TopBanner";
-import Clients from "./components/Clients/Clients";
-import AboutUs from "./components/About/AboutUs";
-import Billing from "./components/Billing/Billing";
-import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage";
+import PageTop from "./components/PageTop/PageTop";
+import About from "./pages/About";
+import { BrowserRouter } from "react-router-dom";
+import AppRoute from "./router/AppRoute";
+import "./components/helpers/initFA";
 
 function App() {
   return (
-    <Fragment>
-      <TopNavigation />
-      <TopBanner />
-      <Clients />
-      <AboutUs />
-      <Billing />
-      <Footer />
-    </Fragment>
+    <BrowserRouter>
+      <AppRoute />
+    </BrowserRouter>
   );
 }
 
