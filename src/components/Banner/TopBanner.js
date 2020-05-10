@@ -16,7 +16,7 @@ const TopBanner = () => {
             </h4>
             <p>
               <a href="#" className="btn btn-lg btnGradient">
-                <FontAwesomeIcon className="mr-2 fa-1x" icon={"coffee"} />
+                <FontAwesomeIcon className="mr-2 fa-1x" icon="coffee" />
                 Signup for trial
               </a>
             </p>

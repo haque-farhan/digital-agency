@@ -55,31 +55,43 @@
 }
 
 .navBackground {
-  -moz-transition: background-color 400ms linear;
-  -o-transition: background-color 400ms linear;
-  -webkit-transition: background-color 400ms linear;
-  transition: background-color 400ms linear;
-  background-color: rgba(00, 00, 00, 0) !important;
+  background: #fff;
 }
 
 .navBackgroundScroll {
-  -moz-transition: background-color 400ms linear;
-  -o-transition: background-color 400ms linear;
-  -webkit-transition: background-color 400ms linear;
-  transition: background-color 400ms linear;
-  background-color: #3a3d3b !important;
+  border-bottom: 1px solid rgba(132, 140, 152, 0.125);
+  background: #fff;
 }
 
 .navTitle {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #0073e6 !important;
-  font-weight: 700;
-  font-size: 24px;
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 .navTitleScroll {
   font-family: Arial, Helvetica, sans-serif;
-  color: #0073e6 !important;
+  color: #7d8ba9 !important;
   font-weight: 700;
   font-size: 24px;
+}
+
+.nav-item .active {
+  color: blue;
+}
+.nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.space-md {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.bg-purple {
+  background-color: #677bff;
 }

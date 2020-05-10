@@ -49,13 +49,15 @@ const TopNavigation = (props) => {
 
   return (
     <Fragment>
+      <title>{props.title}</title>
       <Navbar expand="md" fixed="top" className={navbarBack}>
         <NavbarBrand to="/" className={navBarTitle}>
           Spyder
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="mr-auto" navbar></Nav>
+          <Nav>
             <NavItem>
               <NavLink className="nav-link" exact to="/">
                 Home
@@ -71,21 +73,9 @@ const TopNavigation = (props) => {
                 About
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+
+            <NavbarText onClick={modalToggle}>Help</NavbarText>
           </Nav>
-          <NavbarText onClick={modalToggle} className={navBarTitle}>
-            Help
-          </NavbarText>
         </Collapse>
       </Navbar>
       <Modal isOpen={modal} toggle={modalToggle} className="">
