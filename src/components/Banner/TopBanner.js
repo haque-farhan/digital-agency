@@ -9,7 +9,7 @@ const TopBanner = () => {
       <Container>
         <Row className="row d-flex align-items-center justify-content-center text-center">
           <Col md="10">
-            <h1>Get our best marketing resources straight to your inbox!</h1>
+            <h1>Business Goals Achieved with Design</h1>
             <h4 className="mt-3 mb-3">
               Join over 100,000 people who get our Hints &amp; Tips email
               newsletter.

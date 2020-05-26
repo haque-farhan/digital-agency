@@ -73,15 +73,16 @@
   white-space: nowrap;
 }
 
+.navbarTitle {
+  margin-left: 3rem !important;
+}
+
 .navTitleScroll {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #7d8ba9 !important;
-  font-weight: 700;
-  font-size: 24px;
+  margin-left: 3rem !important;
 }
 
 .nav-item .active {
-  color: blue;
+  color: #677bff;
 }
 .nav-link {
   color: rgba(0, 0, 0, 0.5);
@@ -94,4 +95,14 @@
 
 .bg-purple {
   background-color: #677bff;
+}
+
+.navbar-theme {
+  font-weight: 500;
+}
+
+.bg-footer {
+  margin-top: 3rem;
+  color: #fff;
+  background: #1b1642 !important;
 }

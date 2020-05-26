@@ -10,7 +10,7 @@ const AboutUs = () => {
         <Row className="align-items-center">
           <Col md="5">
             <h1 className="black-color font-alt">
-              Get this Bootstrap landing page for on Sharebootstrap.com ..
+              Great Websites Adds Great Values ..
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

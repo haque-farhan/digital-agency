@@ -17,6 +17,7 @@ import {
   ModalBody,
   ModalFooter,
 } from "reactstrap";
+import navbarBrandLogo from "../../assests/img/spyder-logo.png";
 
 import { NavLink } from "react-router-dom";
 
@@ -51,19 +52,19 @@ const TopNavigation = (props) => {
     <Fragment>
       <title>{props.title}</title>
       <Navbar expand="md" fixed="top" className={navbarBack}>
-        <NavbarBrand to="/" className={navBarTitle}>
-          Spyder
+        <NavbarBrand to="/" className="navbarTitle">
+          <img src={navbarBrandLogo} alt="logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar></Nav>
-          <Nav>
-            <NavItem>
+        <Collapse isOpen={isOpen} navbar className="navbar-theme">
+          <Nav></Nav>
+          <Nav className="ml-auto" navbar>
+            <NavItem className="px-3">
               <NavLink className="nav-link" exact to="/">
                 Home
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="px-3">
               <NavLink
                 className="nav-link"
                 activeClassName="active"
@@ -73,8 +74,29 @@ const TopNavigation = (props) => {
                 About
               </NavLink>
             </NavItem>
-
-            <NavbarText onClick={modalToggle}>Help</NavbarText>
+            <NavItem className="px-3">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/about"
+              >
+                Clients
+              </NavLink>
+            </NavItem>
+            <NavItem className="px-3">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/about"
+              >
+                Contact
+              </NavLink>
+            </NavItem>
+            <NavbarText onClick={modalToggle} className="px-3">
+              Help
+            </NavbarText>
           </Nav>
         </Collapse>
       </Navbar>
