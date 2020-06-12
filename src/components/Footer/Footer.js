@@ -4,7 +4,7 @@ import { Container, ListGroup, ListGroupItem, Row, Col } from "reactstrap";
 const Footer = () => {
   return (
     <Fragment>
-      <Row className="bg-footer p-5 mt-5">
+      <Row className="bg-footer p-5 m-0 mt-5">
         <Col md="12">
           <Row>
             <Col md="4">

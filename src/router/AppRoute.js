@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import About from "../pages/About";
+import login from "../components/Authentication/login";
 
 class AppRoute extends Component {
   render() {
@@ -9,8 +10,8 @@ class AppRoute extends Component {
       <Fragment>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/login" component={login} />
           <Route exact path="/about" component={About} />
-          <Route render={() => <h1>not found</h1>} />
         </Switch>
       </Fragment>
     );
