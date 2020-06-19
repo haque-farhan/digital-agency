@@ -23,7 +23,7 @@ const Billing = () => {
             <h2>No additional costs. Pay for what you use.</h2>
           </Col>
           <CardDeck>
-            <Card className="text-center">
+            <Card className="text-center billing-card">
               <CardBody>
                 <CardTitle> Starter package</CardTitle>
                 <h3 className="display-3 font-weight-bold">$18</h3>
@@ -42,7 +42,7 @@ const Billing = () => {
                 </CardFooter>
               </CardBody>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center billing-card">
               <CardBody>
                 <CardTitle> Ultimate package</CardTitle>
                 <h3 className="display-3 font-weight-bold">$39</h3>
@@ -59,7 +59,7 @@ const Billing = () => {
                 </CardFooter>
               </CardBody>
             </Card>
-            <Card className="text-center">
+            <Card className="text-center billing-card">
               <CardBody>
                 <CardTitle> Premium package</CardTitle>
                 <h3 className="display-3 font-weight-bold">$26</h3>
