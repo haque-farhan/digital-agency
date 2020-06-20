@@ -176,7 +176,7 @@ function Dashboard() {
                 </div>
                 <div className="card-body">
                   {projects.map((project, i) => (
-                    <Media className="row align-items-center ml-3 mb-4">
+                    <Media key={i} className="row align-items-center ml-3 mb-4">
                       <a className="avatar avatar-s">
                         <img src={project.src} className="avatar-img rounded" />
                       </a>
@@ -196,7 +196,7 @@ function Dashboard() {
                 </div>
                 <div className="card-body p-3">
                   {tasks.map((task, i) => (
-                    <Card className="mb-2">
+                    <Card className="mb-2" key={i}>
                       <CardBody>
                         <Row className=" align-items-center">
                           <Col>

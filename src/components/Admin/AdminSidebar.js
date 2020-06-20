@@ -34,6 +34,12 @@ const AdminSidebar = () => {
             </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink className="nav-link" to={"/admin/travel"}>
+              <FontAwesomeIcon className="mr-3 fa-1x" icon="meteor" />
+              Travel Blog
+            </NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink className="nav-link" to={"/admin/feed"}>
               <FontAwesomeIcon className="mr-3 fa-1x" icon="meteor" />
               Feed

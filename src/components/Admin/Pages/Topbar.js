@@ -17,8 +17,9 @@ import {
 const Topbar = ({ PageTitle }) => {
   return (
     <div>
+      <title>{PageTitle}</title>
       <Navbar light expand="md" className="navbar-border-bottom">
-        <NavbarBrand>{PageTitle}</NavbarBrand>
+        <NavbarBrand className="pl-4">{PageTitle}</NavbarBrand>
       </Navbar>
     </div>
   );
