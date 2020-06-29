@@ -17,7 +17,7 @@ const TopBanner = () => {
             <p>
               <a href="#" className="btn btn-lg btnGradient">
                 <FontAwesomeIcon className="mr-2 fa-1x" icon="coffee" />
-                Signup for trial
+                Get Started
               </a>
             </p>
             <p>
