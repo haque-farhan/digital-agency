@@ -10,7 +10,7 @@ class PageTop extends Component {
           <Container>
             <Row className="row d-flex align-items-center justify-content-center text-center">
               <Col md="10">
-                <h4 className="mx-2">{this.props.pageTitle}</h4>
+                <h2 className="mx-2">{this.props.pageTitle}</h2>
               </Col>
             </Row>
           </Container>

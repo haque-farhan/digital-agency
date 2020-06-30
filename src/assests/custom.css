@@ -58,8 +58,24 @@
   box-shadow: 0 2px 12px 2px #99a6b14a;
 }
 
+.rounded-top-left {
+  border-top-left-radius: 1rem !important;
+}
+
+.rounded-bottom-right {
+  border-bottom-right-radius: 1rem !important;
+}
+
 .navBackground {
   background: #fff;
+}
+.nav-link.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+.nav-link:hover {
+  color: #007bff;
 }
 
 .navBackgroundScroll {
@@ -149,4 +165,16 @@ a:focus {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.productCard {
+  box-shadow: 0 0 24px rgba(27, 22, 66, 0.04),
+    0 44px 74px rgba(27, 22, 66, 0.06);
+}
+
+.productCardShadow {
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }

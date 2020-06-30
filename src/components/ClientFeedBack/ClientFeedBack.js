@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
 import "video-react/dist/video-react.css";
 import { Player, BigPlayButton } from "video-react";
-import poster from "./../../assests/img/client.jpeg";
+import poster from "./../../assests/img/client1.jpg";
 
 const ClientFeedBack = () => {
   return (
@@ -29,7 +29,7 @@ const ClientFeedBack = () => {
                 business to the next level.
               </h4>
               <p className="text-white text-italic mt-3">
-                Gavin Feilding – Digital Manager, dusk Australia
+                Shipman Northcutt – Digital Manager, dusk Australia
               </p>
             </Col>
           </Row>

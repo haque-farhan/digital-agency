@@ -6,18 +6,17 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText,
   Button,
   Modal,
   ModalHeader,
   ModalBody,
   ModalFooter,
+  Row,
+  Col,
 } from "reactstrap";
 import navbarBrandLogo from "../../assests/img/spyder-logo.png";
+import help from "../../assests/img/help.png";
 
 import { NavLink } from "react-router-dom";
 
@@ -79,9 +78,9 @@ const TopNavigation = (props) => {
                 className="nav-link"
                 activeClassName="active"
                 exact
-                to="/about"
+                to="/products"
               >
-                Clients
+                Products
               </NavLink>
             </NavItem>
             <NavItem className="px-3">
@@ -89,21 +88,29 @@ const TopNavigation = (props) => {
                 className="nav-link"
                 activeClassName="active"
                 exact
-                to="/about"
+                to="/login"
               >
-                Contact
+                Login
               </NavLink>
             </NavItem>
-            <NavbarText onClick={modalToggle} className="px-3">
+            <NavbarText onClick={modalToggle} className="px-3 cursor-pointer">
               Help
             </NavbarText>
           </Nav>
         </Collapse>
       </Navbar>
       <Modal isOpen={modal} toggle={modalToggle} className="">
-        <ModalHeader toggle={modalToggle}>Help</ModalHeader>
+        <ModalHeader toggle={modalToggle}>How can we help?</ModalHeader>
         <ModalBody>
-          If you need any help feel free to ask email : Farhanhaque.lu@gmail.com
+          <Row>
+            <Col md="5">
+              <img src={help} className="img-fluid" />
+            </Col>
+            <Col md="7" className="text-center">
+              <h5>we are ready to help you</h5>
+              <p>Email us: Farhanhaque.lu@gmail.com</p>
+            </Col>
+          </Row>
         </ModalBody>
         <ModalFooter>
           {/* <Button color="primary" onClick={modalToggle}>

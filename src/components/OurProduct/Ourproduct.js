@@ -1,57 +1,91 @@
 import React, { Fragment } from "react";
-import { Container, Row, Col } from "reactstrap";
-import project1 from "./../../assests/img/project/1.jpg";
-import project2 from "./../../assests/img/project/11.jpg";
-import project3 from "./../../assests/img/project/3.jpg";
-import project4 from "./../../assests/img/project/4.jpg";
-import project5 from "./../../assests/img/project/5.jpg";
-import project6 from "./../../assests/img/project/6.jpg";
-import project7 from "./../../assests/img/project/7.jpg";
-import project9 from "./../../assests/img/project/9.jpg";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
+import product1 from "./../../assests/img/product/1.jpg";
+import product2 from "./../../assests/img/product/2.jpg";
+import product3 from "./../../assests/img/product/3.jpg";
+import TopNavigation from "../Navbar/TopNavigation";
+import PageTop from "../PageTop/PageTop";
 
 const Ourproduct = () => {
   return (
-    <section className="py-5">
-      <Container>
-        <Row className="align-items-center text-center">
-          <Col md="12" className="p-4">
-            <h2>Our Latest News and Updates Blog Post</h2>
-            <p>
-              Bar flustered impressive manifest far crud opened inside owing
-              after wasteful telling sprang coldly and spoke less clients.
-            </p>
-          </Col>
-        </Row>
-        <Row className="align-items-end">
-          <Col md="7">
-            <Row>
-              <Col md="4">
-                <img src={project2} className="img-fluid rounded h-100 w-100" />
-              </Col>
-              <Col md="8">
-                <img src={project9} className="img-fluid rounded h-100 w-100" />
-              </Col>
-            </Row>
-          </Col>
-          <Col md="5">
-            <p className="mb-4">
-              We can make any Personal , Commercial-Website and Software at very
-              short period of time. We focus on Customer needs and Choice.
-              Quality work is our Business Policy ipsum dui manatee for the one
-              asfers since far flustered impressive your longtails.
-            </p>
-            <Row>
-              <Col md="6">
-                <img src={project7} className="img-fluid rounded h-100 w-100" />
-              </Col>
-              <Col md="6">
-                <img src={project4} className="img-fluid rounded h-100 w-100" />
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Fragment>
+      <TopNavigation title="Digital Products" />
+      <PageTop pageTitle="Digital Products" />
+      <section className="py-5">
+        <Container>
+          <Row className="align-items-center text-center p-4 py-5">
+            <Col md="4">
+              <Card className="productCard">
+                <CardImg
+                  className="productCardShadow"
+                  top
+                  width="100%"
+                  src={product1}
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <h2>Design</h2>
+                  <CardText>
+                    A digital product agency can maintain all the visual and
+                    experience process (UI/UX design), apart from, art direction
+                    and visual design.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col md="4">
+              <Card className="productCard">
+                <CardImg
+                  top
+                  className="productCardShadow"
+                  width="100%"
+                  src={product2}
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <h2>Consulting</h2>
+                  <CardText>
+                    A product agency can give you guidance with its technical
+                    proficiency and overall knowledge when it’s not enough
+                    building,promoting a digital product
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col md="4">
+              <Card className="productCard">
+                <CardImg
+                  top
+                  className="productCardShadow"
+                  width="100%"
+                  src={product3}
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <h2>Strategy</h2>
+                  <CardText>
+                    Concept creation, planning, development, release, marketing,
+                    maintenance, update, implementation. In short, entire
+                    practices for the digital product.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Fragment>
   );
 };
 
