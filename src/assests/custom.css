@@ -22,6 +22,11 @@
   border-radius: 0.25rem !important;
 }
 
+.h3,
+h3 {
+  font-size: 1.75rem;
+}
+
 .btnGradient {
   border-radius: 5px;
   background-color: transparent;
@@ -48,7 +53,8 @@
 }
 
 .billing-card {
-  border-color: rgba(132, 140, 152, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.625rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -126,7 +132,12 @@
 .bg-footer {
   margin-top: 3rem;
   color: #fff;
-  background: #1b1642 !important;
+  background: #21325b !important;
+}
+
+.border-footer-top {
+  opacity: 0.2;
+  border-top: 1px solid #dee2e6 !important;
 }
 
 .bg-holder {
@@ -143,6 +154,10 @@
   backface-visibility: hidden;
   background-repeat: no-repeat;
   z-index: 0;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600 !important;
 }
 
 /* Admin route */
@@ -177,4 +192,12 @@ a:focus {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
     0 4px 15px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+.opacity-xs {
+  opacity: 0.2;
 }

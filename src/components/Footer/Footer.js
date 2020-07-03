@@ -1,68 +1,140 @@
 import React, { Fragment } from "react";
-import { Container, ListGroup, ListGroupItem, Row, Col } from "reactstrap";
+import {
+  Container,
+  ListGroup,
+  ListGroupItem,
+  Row,
+  Col,
+  Card,
+  CardTitle,
+  CardText,
+  CardImg,
+  CardImgOverlay,
+} from "reactstrap";
+import product3 from "./../../assests/img/product/3.jpg";
 
 const Footer = () => {
   return (
     <Fragment>
       <Row className="bg-footer p-5 m-0 mt-5">
+        {/* <Col md="12">
+          <Card inverse>
+            <CardImg width="100%" src={product3} alt="Card image cap" />
+            <CardImgOverlay>
+              <CardTitle>Card Title</CardTitle>
+              <CardText>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </CardText>
+            </CardImgOverlay>
+          </Card>
+        </Col> */}
         <Col md="12">
-          <Row>
-            <Col md="4">
+          <Row className="p-4">
+            <Col md="6">
               <Container>
                 <h2>Spyder</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing esed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna. At
-                  vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
+                <small>
+                  Where design connects with excellence. Webpixels attempts to
+                  bring the best development experience to designers and
+                  developers by offering the tools needed for having a quick and
+                  solid start in most web projects.
+                </small>
               </Container>
             </Col>
-            <Col md="4">
+            <Col md="2">
               <Container>
-                <h2>Services</h2>
-                <ListGroup>
-                  <ListGroupItem className="text-dark font-weight-bold">
-                    Website Design
-                  </ListGroupItem>
-                  <ListGroupItem className="text-dark font-weight-bold">
-                    Website Maintanance
-                  </ListGroupItem>
-                  <ListGroupItem className="text-dark font-weight-bold">
-                    Software Design
-                  </ListGroupItem>
-                  <ListGroupItem className="text-dark font-weight-bold">
-                    Graphics Design
-                  </ListGroupItem>
-                </ListGroup>
+                <h6 className="mb-3">Services</h6>
+                <ul className="list-unstyled mb-6 mb-md-4 mb-lg-0">
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Page Builder
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      UI Kit
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Styleguide
+                    </a>
+                  </li>
+                </ul>
               </Container>
             </Col>
-            <Col md="4">
+            <Col md="2">
               <Container>
-                <h2>Contact Us</h2>
-                <p className="mb-0">
-                  301 The Greenhouse, Custard Factory, London, E2 8DY.
-                </p>
-                <p className="mb-0">
-                  <strong>Email: </strong>
-                  information@email.com
-                </p>
-                <p>
-                  <strong>Mobile: </strong>
-                  +88 1710212329
-                </p>
+                <h6 className="mb-3">About</h6>
+                <ul className="list-unstyled mb-6 mb-md-4 mb-lg-0">
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Pricing
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-500 text-decoration-none" href="#!">
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </Container>
+            </Col>
+            <Col md="2">
+              <Container>
+                <h6 className="mb-3">Company</h6>
+                <ul className="list-unstyled mb-6 mb-md-4 mb-lg-0">
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Community
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Help center
+                    </a>
+                  </li>
+                  <li>
+                    <a className="text-500 text-decoration-none" href="#!">
+                      Support
+                    </a>
+                  </li>
+                </ul>
               </Container>
             </Col>
           </Row>
         </Col>
       </Row>
-      {/* <Row className="bg-footer">
+      <Row className="bg-footer py-3 m-0 ">
         <Col md="12" className="text-center">
-          <p>Thank you for creating with Me | 2020 © Farhan </p>
+          <div className="border-footer-top"></div>
         </Col>
-      </Row> */}
-      {/* <Container className="py-3 bg-footer">
-        <Row></Row>
-      </Container> */}
+      </Row>
+      <Row className="bg-footer py-3 m-0 ">
+        <Col md="12" className="text-center">
+          <Container>
+            <p className="mb-2">All rights reserved. © Ahsanul Haque Farhan</p>
+            <small className="mb-3">
+              When you visit or interact with our sites, services or tools, we
+              or our authorised service providers may use cookies for storing
+              information to help provide you with a better, faster and safer
+              experience and for marketing purposes.
+            </small>
+          </Container>
+        </Col>
+      </Row>
     </Fragment>
   );
 };
