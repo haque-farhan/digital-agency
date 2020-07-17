@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/digital-agency/static/css/main.ec925d4b.chunk.css",
+    "main.js": "/digital-agency/static/js/main.88fa499f.chunk.js",
+    "main.js.map": "/digital-agency/static/js/main.88fa499f.chunk.js.map",
+    "runtime-main.js": "/digital-agency/static/js/runtime-main.ae9ff5f9.js",
+    "runtime-main.js.map": "/digital-agency/static/js/runtime-main.ae9ff5f9.js.map",
+    "static/css/2.1ab3af22.chunk.css": "/digital-agency/static/css/2.1ab3af22.chunk.css",
+    "static/js/2.555e3ca5.chunk.js": "/digital-agency/static/js/2.555e3ca5.chunk.js",
+    "static/js/2.555e3ca5.chunk.js.map": "/digital-agency/static/js/2.555e3ca5.chunk.js.map",
+    "index.html": "/digital-agency/index.html",
+    "precache-manifest.0eadc44dd57dc7ed31701bed9ce7ed4c.js": "/digital-agency/precache-manifest.0eadc44dd57dc7ed31701bed9ce7ed4c.js",
+    "service-worker.js": "/digital-agency/service-worker.js",
+    "static/css/2.1ab3af22.chunk.css.map": "/digital-agency/static/css/2.1ab3af22.chunk.css.map",
+    "static/css/main.ec925d4b.chunk.css.map": "/digital-agency/static/css/main.ec925d4b.chunk.css.map",
+    "static/js/2.555e3ca5.chunk.js.LICENSE.txt": "/digital-agency/static/js/2.555e3ca5.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/digital-agency/static/media/1.67825b7c.jpg",
+    "static/media/1.png": "/digital-agency/static/media/1.f5313f0c.png",
+    "static/media/11.jpg": "/digital-agency/static/media/11.2c2e24d8.jpg",
+    "static/media/2.jpg": "/digital-agency/static/media/2.f9127639.jpg",
+    "static/media/3.jpg": "/digital-agency/static/media/3.7d63d3c2.jpg",
+    "static/media/4.jpg": "/digital-agency/static/media/4.0557fee2.jpg",
+    "static/media/4.png": "/digital-agency/static/media/4.1cb4929a.png",
+    "static/media/7.jpg": "/digital-agency/static/media/7.9faa0f27.jpg",
+    "static/media/9.jpg": "/digital-agency/static/media/9.321f051f.jpg",
+    "static/media/about.jpg": "/digital-agency/static/media/about.f1bf1a1d.jpg",
+    "static/media/client1.jpg": "/digital-agency/static/media/client1.6a8becec.jpg",
+    "static/media/help.png": "/digital-agency/static/media/help.6f677be1.png",
+    "static/media/login.png": "/digital-agency/static/media/login.145aab63.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae9ff5f9.js",
+    "static/css/2.1ab3af22.chunk.css",
+    "static/js/2.555e3ca5.chunk.js",
+    "static/css/main.ec925d4b.chunk.css",
+    "static/js/main.88fa499f.chunk.js"
+  ]
+}
